@@ -1,53 +1,43 @@
----
-project:
-  name: "Hotel Booking Cancellation Prediction"
-  description: >
-    Developed a machine learning model to predict hotel booking cancellations 
-    using historical reservation data. Applied data preprocessing, feature 
-    engineering, and Random Forest classifier. Evaluated model with accuracy, 
-    precision, and recall to help hotels reduce last-minute cancellations.
+# Hotel Booking Cancellation Prediction
+## Project Overview
 
-authors:
-  - name: "Your Name"
-    email: "your.email@example.com"
+This project develops a machine learning model to predict the likelihood of hotel booking cancellations using historical reservation data. Last-minute cancellations can affect hotel revenue and operational planning. The system uses data preprocessing, feature engineering, and a Random Forest classifier to identify bookings with a high probability of cancellation.
 
-technologies:
-  - Python
-  - Pandas
-  - NumPy
-  - Scikit-learn
-  - Random Forest
-  - Jupyter Notebook
+## Key Achievements:
 
-features:
-  - Data preprocessing and cleaning
-  - Feature engineering
-  - Predictive modeling using Random Forest
-  - Model evaluation using accuracy, precision, and recall
+- Achieved high prediction performance using accuracy, precision, and recall metrics.
+- Helps hotels proactively manage bookings and reduce revenue loss.
+- Implements a complete data-driven workflow from raw data to actionable insights.
 
-datasets:
-  source: "Link to dataset or Kaggle source"
-  size: "e.g., 50,000 records"
-  format: "CSV"
+## Features
 
-installation:
-  - "Clone the repository"
-  - "Create a virtual environment: python -m venv env"
-  - "Activate the environment: source env/bin/activate (Linux/Mac) or .\\env\\Scripts\\activate (Windows)"
-  - "Install dependencies: pip install -r requirements.txt"
+- Data Preprocessing: Handles missing values, categorical encoding, and normalization.
+- Feature Engineering: Creates meaningful features to improve prediction performance.
+- Predictive Modeling: Uses Random Forest classifier for robust classification.
+- Evaluation Metrics: Measures model performance using accuracy, precision, and recall.
+- Decision Support: Identifies high-risk bookings to support hotel planning and strategy.
 
-usage:
-  - "Run main.py or notebook to train and evaluate the model"
-  - "Modify config.yaml for parameters if needed"
+## Technologies & Tools
 
-demo:
-  image: "path/to/demo_image.png"
-  description: "Screenshot of Streamlit dashboard or model output"
+- Programming Language: Python 3.x
+- Libraries: Pandas, NumPy, scikit-learn, Matplotlib, Seaborn
+- Machine Learning: Random Forest, Classification Metrics
+- Notebook: Colab/VS Code
 
-license: "MIT"
-github_repo: "https://github.com/yourusername/hotel-booking-cancellation"
-badges:
-  - "Python: https://img.shields.io/badge/Python-3.10-blue"
-  - "License: https://img.shields.io/badge/License-MIT-green"
+## Dataset
 
----
+- Historical hotel booking records (can include features like booking date, lead time, customer type, etc.).
+- Dataset split into Training and Testing sets.
+- Preprocessing includes: missing value handling, feature encoding, and scaling.
+
+## Model Pipeline
+
+- Data Loading & Cleaning: Import dataset, remove duplicates, handle missing values.
+- Feature Engineering: Transform categorical variables, create new features for cancellation patterns.
+- Model Training: Random Forest classifier trained on training data.
+- Evaluation: Performance evaluated using accuracy, precision, recall, and F1-score.
+
+## Training Details:
+
+- Metrics: Accuracy, Precision, Recall
+- Cross-validation applied to improve model generalization
